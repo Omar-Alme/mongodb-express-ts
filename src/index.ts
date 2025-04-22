@@ -16,7 +16,7 @@ async function start() {
     });
 
     app.listen(process.env.HTTP_PORT, () => {
-        console.log(`Server listening on port ${process.env.HTTP_PORT}`);
+        console.log(`Server listening on port http://localhost:${process.env.HTTP_PORT}`);
     });
 }
 
