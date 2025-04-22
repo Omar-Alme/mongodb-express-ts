@@ -1,12 +1,2 @@
-node_modules
-dist
-yarn-error.log
-npm-debug.log
-yarn-debug.log
-.DS_Store
-*.log
-*.env
-*.local
-*.swp
-*.swo
-*.swn
+.env
+node_modules/
