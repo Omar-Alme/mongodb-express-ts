@@ -1,3 +1,4 @@
+import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import express from "express";
 import { connectToDatabase } from "./lib/dbConnection";
@@ -15,6 +16,8 @@ async function start() {
 
     // create express app
     const app = express();
+
+    app.use(bodyParser.json());
 
     // register routes
     app.get("/", (req, res) => {
