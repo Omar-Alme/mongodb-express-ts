@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
 import express from "express";
+import { connectToDatabase } from "./lib/dbConnection";
 
 async function start() {
 
@@ -7,6 +8,9 @@ async function start() {
     dotenv.config({
         path: "./.env"
     });
+
+    // connect to database
+    await connectToDatabase();
 
     // create express app
     const app = express();
